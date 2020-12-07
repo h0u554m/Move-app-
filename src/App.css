@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Baloo+Tamma+2:wght@500&family=Roboto+Mono:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:hsl(210, 36%, 96%);
+}
+
+.App {
+  font-family: "Alata", sans-serif;
+  text-align: center;
+}
+
+.header-container {
+  color: white;
+  background:black;
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-around;
+  padding: 0.2rem;
+  box-shadow: 5px 2px 16px 3px rgb(0 0 0 / 12%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.search-container > input {
+  width: 100%;
+  padding: 10px 50px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/*Movie Card*/
+
+.movie-card {
+  border-radius: 10px;
+  background:white;
+  
+  margin: 1rem;
+  width: 300px;
+  box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 5%);
+  padding: 2rem;
+}
+
+.movie-card > img {
+  width: 15rem;
+  height: 22rem;
+}
+
+.movie-card > h3,
+.movie-card > p {
+  color:black;
+  padding: 0.2rem;
+}
+
+/*Form styling*/
+
+form {
+  border-radius: 6px;
+  background-color: #eeeeee;
+  font-size: 0.7em;
+  width: calc(100vw / 1.8);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+form > input {
+  padding: 0.7em;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form > label {
+  margin-top: 15px;
+}
+
+/* general button styling */
+
+.btn {
+  display: inline-block;
+  background: hsl(205, 78%, 60%);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.btn-danger {
+  color: white;
+  background: rgba(223, 75, 75, 0.993);
+}
+
+.btn-primary {
+  color: white;
+  background: rgba(156, 156, 197);
+}
+
+.add-movie-btn {
+  background: white;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+/* Responsive  */
+
+@media (min-width: 750px) {
+  form {
+    width: calc(100vw / 3);
+  }
+}
+.container {
+  text-align: center;
+  margin-top: 5rem;
+}
+.item {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  
+}
+.modal-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 84rem;
+
+  background-color:black;
+  z-index: 10;
+}
+
+.modal-body {
+  margin: 10% auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+
+
+
