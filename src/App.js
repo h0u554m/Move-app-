@@ -5,6 +5,8 @@ import MovieList from "./components/MovieList";
 import AddMovie from "./components/AddMovie";
 import "./App.css";
 
+
+
 function App() {
   
   const [movies, setMovies] = useState(moviesData);
@@ -44,5 +46,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
