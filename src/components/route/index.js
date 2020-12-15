@@ -15,7 +15,8 @@ const ReactRouterSetup = () => {
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route path = "/movies/:movie" children = {<Movie />} >
+          <Route path = "/movies/:movie" component={Movie} >  
+          
           </Route>
           <Route path='*'>
             <Error />
